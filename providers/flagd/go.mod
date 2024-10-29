@@ -4,6 +4,8 @@ go 1.21
 
 toolchain go1.22.3
 
+replace github.com/open-feature/flagd/core => github.com/bookingcom/flagd/core v0.0.0-20240924114524-8ad1e29994be
+
 require (
 	buf.build/gen/go/open-feature/flagd/connectrpc/go v1.16.2-20240215170432-1e611e2999cc.1
 	buf.build/gen/go/open-feature/flagd/grpc/go v1.5.1-20240215170432-1e611e2999cc.1
