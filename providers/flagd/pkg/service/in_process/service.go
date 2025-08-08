@@ -312,6 +312,7 @@ func makeSyncProvider(cfg Configuration, log *logger.Logger) (sync.ISync, string
 
 	// grpc sync provider (default uri based on `dns`)
 	uri := fmt.Sprintf("%s:%d", cfg.Host, cfg.Port)
+	log.Info("--> default uri: %s " + uri)
 
 	// if cfg.TargetUri != "" && isValidTargetScheme(cfg.TargetUri) {
 	if cfg.TargetUri != "" {
